@@ -908,6 +908,53 @@ section {
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
+.main-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 1.8rem 0.8rem 1.5rem;
+  background-color: transparent;
+  color: white;
+  border: 2px solid #00ff88;
+  border-radius: 100px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-btn:hover {
+  background-color: rgba(0, 255, 136, 0.1);
+}
+
+.btn-text {
+  margin-right: 1.5rem;
+}
+
+.btn-icon {
+  background-color: #00cc66;
+  border-radius: 50%;
+  padding: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0.3rem;
+  height: 2.3rem;
+  width: 2.3rem;
+  transition: background-color 0.3s;
+}
+
+.main-btn:hover .btn-icon {
+  background-color: #00aa55;
+}
+
+.btn-icon i {
+  color: white;
+  font-size: 1rem;
+}
 
 .main-btn {
   border-radius: 30px;

@@ -13,6 +13,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <!-- Your Custom Script -->
+    <script src="js/contact.js"></script>
 </head>
 
 <body class="main-content">
@@ -41,6 +47,29 @@
                         <span class="btn-icon"><i class="fas fa-download"></i></span>
                     </a>
                 </div>
+
+                <div class="contact-content-con">
+                    <div class="left-contact">
+                        <div class="contact-icons">
+                            <div class="contact-icon">
+                                <a href="https://www.facebook.com/warlordzankrow/" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <!-- <a href="www.twitter.com" target="_blank">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a> -->
+                                <a href="https://www.linkedin.com/in/arbin-shrestha-aa364519a/" target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://github.com/ArbinShrestha" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
@@ -69,11 +98,13 @@
                         </a>
                     </div>
 
+
+
                 </div>
                 <div class="right-about">
                     <div class="about-item">
                         <div class="abt-text">
-                            <p class="large-text">100+</p>
+                            <p class="large-text">50+</p>
                             <p class="small-text">Projects <br /> Completed</p>
 
                         </div>
@@ -108,7 +139,7 @@
                     <div class="progress-bar">
                         <p class="prog-title">Test Automation (Selenium, Playwright)</p>
                         <div class="progress-con">
-                            <p class="prog text">90%</p>
+                            <p class="prog text">60%</p>
                             <div class="progress">
                                 <span class="html"></span>
                             </div>
@@ -126,7 +157,7 @@
                     <div class="progress-bar">
                         <p class="prog-title">Bug Tracking (Jira, Trello)</p>
                         <div class="progress-con">
-                            <p class="prog text">30%</p>
+                            <p class="prog text">90%</p>
                             <div class="progress">
                                 <span class="js"></span>
                             </div>
@@ -135,7 +166,7 @@
                     <div class="progress-bar">
                         <p class="prog-title">CI/CD & Regression Testing</p>
                         <div class="progress-con">
-                            <p class="prog text">0%</p>
+                            <p class="prog text">30%</p>
                             <div class="progress">
                                 <span class="node"></span>
                             </div>
@@ -144,7 +175,7 @@
                     <div class="progress-bar">
                         <p class="prog-title">API Testing (Postman, REST Assured)</p>
                         <div class="progress-con">
-                            <p class="prog text">0%</p>
+                            <p class="prog text">90%</p>
                             <div class="progress">
                                 <span class="node"></span>
                             </div>
@@ -243,7 +274,7 @@
 
         </section>
 
-        <section class="section sec3" id="portfolio">
+        <!-- <section class="section sec3" id="portfolio">
             <div class="main-title">
                 <h2>My <span>Portfolio</span><span class="bg-text">My Work</span></h2>
             </div>
@@ -418,7 +449,7 @@
                 </div>
 
             </div>
-        </section>
+        </section> -->
         <section class="section sec5" id="contact">
             <div class="main-title">
                 <h2>Contact <span>Me</span><span class="bg-text">Contact Me</span></h2>
@@ -427,7 +458,7 @@
             <div class="contact-content-con">
                 <div class="left-contact">
                     <h4>Contact me Here</h4>
-                    <p>Lorem Ipsum</p>
+                    <p>orbeenshr@gmail.com</p>
                     <div class="contact-info">
                         <div class="contact-item">
                             <div class="icon">
@@ -435,41 +466,24 @@
                                 Location
                             </div>
                             <p>
-                                : London, United Kingdom
+                                : Kathmandu, Nepal
                             </p>
                         </div>
-                        <div class="contact-item">
-                            <div class="icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                                Location
-                            </div>
-                            <p>
-                                : London, United Kingdom
-                            </p>
-                        </div>
-                        <div class="contact-item">
-                            <div class="icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                                Location
-                            </div>
-                            <p>
-                                : London, United Kingdom
-                            </p>
-                        </div>
+
                     </div>
 
                     <div class="contact-icons">
                         <div class="contact-icon">
-                            <a href="www.facebook.com" target="_blank">
+                            <a href="https://www.facebook.com/warlordzankrow/" target="_blank">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
-                            <a href="www.twitter.com" target="_blank">
+                            <!-- <a href="www.twitter.com" target="_blank">
                                 <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="www.linkedin.com" target="_blank">
+                            </a> -->
+                            <a href="https://www.linkedin.com/in/arbin-shrestha-aa364519a/" target="_blank">
                                 <i class="fab fa-linkedin"></i>
                             </a>
-                            <a href="www.github.com" target="_blank">
+                            <a href="https://github.com/ArbinShrestha" target="_blank">
                                 <i class="fab fa-github"></i>
                             </a>
 
@@ -477,26 +491,28 @@
                     </div>
                 </div>
 
-                <div class="right-contact">
-                    <form action="" class="contact-form">
+                <form id="contact-form" class="contact-form">
+                    <div class="right-contact">
+
                         <div class="input-control i-c-2">
-                            <input type="text" required placeholder="YOUR NAME">
-                            <input type="email" required placeholder="YOUR EMAIL">
+                            <input type="text" name="user_name" required placeholder="YOUR NAME">
+                            <input type="email" name="user_email" required placeholder="YOUR EMAIL">
                         </div>
                         <div class="input-control">
-                            <input type="text" required placeholder="ENTER SUBJECT">
+                            <input type="text" name="subject" required placeholder="ENTER SUBJECT">
                         </div>
                         <div class="input-control">
-                            <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
+                            <textarea name="message" cols="15" rows="8" placeholder="Message Here..."></textarea>
                         </div>
                         <div class="submit-btn">
-                            <a href="" class="main-btn">
-                                <span class="btn-text">Download CV</span>
-                                <span class="btn-icon"><i class="fas fa-download"></i></span>
-                            </a>
+                            <button type="submit" class="main-btn">
+                                <span class="btn-text">CONTACT ME</span>
+                                <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                            </button>
                         </div>
-                    </form>
-                </div>
+
+                    </div>
+                </form>
             </div>
         </section>
     </main>
@@ -508,12 +524,12 @@
         <div class="control control-2" data-id="about">
             <i class="fas fa-user"></i>
         </div>
-        <div class="control control-3" data-id="portfolio">
+        <!-- <div class="control control-3" data-id="portfolio">
             <i class="fas fa-briefcase"></i>
         </div>
         <div class="control control-4" data-id="blogs">
             <i class="fas fa-newspaper"></i>
-        </div>
+        </div> -->
         <div class="control control-5" data-id="contact">
             <i class="fas fa-envelope-open"></i>
         </div>
@@ -523,7 +539,7 @@
         <i class="fas fa-adjust"></i>
     </div>
 
-    <script src="app.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 
